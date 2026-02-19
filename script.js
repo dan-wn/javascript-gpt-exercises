@@ -45,3 +45,13 @@ function canEnter (age = 0, hasValidID = false) {
 }
 
 canEnter (18, true);
+
+// Exercise 5: Logical Operators & Short-Circuit Evaluation
+function getUserStatus (isLoggedIn, isAdmin) {
+  return isLoggedIn && isAdmin ? "Admin" : isLoggedIn && !isAdmin ? "Customer" : "Guest";
+}
+
+getUserStatus(true, true);
+
+
+
