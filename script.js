@@ -12,3 +12,16 @@ if (isAdult && isVerified) {
 else {
   console.log("Not Allowed");
 }
+
+//Exercise 2: Truthy & Falsy Values
+
+const email = "juandelacruz@gmail.com";
+const hasEmail = email;
+
+if (hasEmail) {
+  console.log("Email provided");
+} 
+else {
+  console.log("Email is required");
+}
+
