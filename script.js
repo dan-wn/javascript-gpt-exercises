@@ -36,4 +36,12 @@ else {
  console.log("No username");
 }
 
+//Exercise 4: Function
 
+const LEGAL_AGE = 18
+
+function canEnter (age = 0, hasValidID = false) {
+ return age >= LEGAL_AGE && hasValidID;
+}
+
+canEnter (18, true);
