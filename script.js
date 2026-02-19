@@ -25,3 +25,15 @@ else {
   console.log("Email is required");
 }
 
+//Exercise 3: Truthy/Falsy to Boolean
+
+const username = "";
+const hasUsername = !!username;
+if (hasUsername) {
+ console.log("Username exists");
+}
+else {
+ console.log("No username");
+}
+
+
