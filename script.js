@@ -53,5 +53,33 @@ function getUserStatus (isLoggedIn, isAdmin) {
 
 getUserStatus(true, true);
 
+// Exercise 6: Basic Counting 
+for (let i = 0; i <= 4; i++) {
+  console.log (i);
+}
+
+// Exercise 7: Start & End Control
+for (let i = 5; i >= 1; i--) {
+  console.log (i);
+}
+
+//Exercise 8: Skip Values (Step Size)
+for (let i = 0; i <= 10; i += 2) {
+  console.log (i);
+}
+
+//Exercise 9: Conditional Logic Inside Loop
+for (let i = 1; i <= 10; i++) {
+  if (i === 5) continue;
+  console.log (i);
+}
+
+//Exercise 10: Loop Control
+for (let i = 1; i <= 10; i++) {
+  if (i === 7) break;
+  console.log (i);
+}
+
+
 
 
