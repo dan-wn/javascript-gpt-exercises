@@ -80,6 +80,35 @@ for (let i = 1; i <= 10; i++) {
   console.log (i);
 }
 
+// Exercise 1: Basic loop read
+const fruits = ["apple", "banana", "orange"];
 
+for (i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
 
+//Exercise 2: Index awareness
+const numbers = [10, 20, 30, 40];
 
+for (i = 0; i < numbers.length; i++) {
+  console.log(`${i} ${numbers[i]}`);
+}
+
+//Exercise 3: Manual last element 
+const cities = ["Manila", "Tokyo", "Seoul"];
+for (i = 2; i < cities.length; i++) {
+  console.log (cities[i]);
+}
+
+//Exercise 4: Compare with at()
+const scores = [85, 90, 95];
+for (i = 2; i < cities.length; i++) {
+  console.log (scores[i]);
+  console.log (scores.at(-1));
+}
+
+//Exercise 5: Empty the array 
+const stack = ["a", "b", "c"];
+for (i = 0; i < stack.length; i++) {
+  console.log (stack.pop());
+}
