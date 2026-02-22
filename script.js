@@ -112,3 +112,122 @@ const stack = ["a", "b", "c"];
 for (i = 0; i < stack.length; i++) {
   console.log (stack.pop());
 }
+
+//.map method exercises
+
+// Exercise 1: Double the numbers 
+const num = [2, 4, 6, 8];
+const doubleNum = num.map(nums => nums * 2);
+console.log(doubleNum); //returns 4, 8, 12, 16
+console.log(num); //return original array
+
+//Exercise 2: Convert to strings
+const numberz = [1, 2, 3];
+const numToString = numberz.map(num => num.toString());
+console.log(numToString);
+console.log(numberz);
+
+//Exercise 3: Add "Mr." to names
+const names = ["Dan", "Leigh", "Dang"];
+const namesWithMr = names.map(namee => "Mr. " + namee );
+console.log(namesWithMr);
+console.log(names);
+
+//Exercise 4: Extract property
+const products = [
+  { name: "Laptop", price: 1000},
+  { name: "Phone", price: 500}
+];
+
+const returnName = products.map(namez => namez.name);
+console.log(returnName);
+
+//Exercise 5: Transform objects 
+const users = [
+  { name: "Dan", age: 25 },
+  { name: "Alex", age: 30}
+];
+
+const transformUser = users.map(user => { 
+  return {
+    name: user.name,
+    age: user.age + 1
+  }
+}
+)
+console.log(transformUser);
+console.log(users);
+
+/* 
+Exercise: Add 1 to every number
+const numbers = [1, 2, 3, 4];
+const addOneToNumbers = numbers.map(num => num + 1);
+console.log(addOneToNumbers);
+
+Exercise: Triple the numbers
+const tripleTheNumbers = numbers.map(num => num * 3);
+console.log(tripleTheNumbers)
+
+Exercise: Convert to booleans
+const numToBooleans = numbers.map(num => Boolean(num));
+console.log(numToBooleans);
+
+Exercise: Uppercase all strings
+const words = ["hello", "world", "odin"];
+const wordsToUppercase = words.map(word => word.toUppercase());
+console.log(wordsToUppercase);
+
+Exercise: Add suffix
+const wordsAddSuffix = words.map(word => word + "!");
+console.log(wordsAddSuffix);
+
+const getWordsLength = words.map(word => word.length);
+console.log(getWordsLength);
+
+const users = [
+  { name: "Dan", age: 25 },
+  { name: "Alex", age: 30 },
+  { name: "Maria", age: 22 }
+];
+
+const getUsersName = users.map(user => user.name);
+console.log(getUsersName);
+
+const products = [ 
+ { name: "Laptop", price: 1000},
+ { name: "Phone", price: 500}
+];
+
+const addPriceToProduct = products.map(product => {
+  return 
+    {
+    name: product.name, 
+    price: product.price / 10 + product.price
+    }
+  });
+
+
+const addPriceToProduct = products.map(product => {
+  return 
+    {
+    name: product.name, 
+    price: product.price / 10 + product.price
+    }
+  });
+
+console.log(addPriceToProduct);
+
+const users = [
+  { firstName: "Dan", age: 25 },
+  { firstName: "Alex", age: 30 }
+];
+
+const usersRenameProperty = users.map(user => {
+  return {
+    name: user.firstName,
+    age: user.age
+  }
+  });
+  
+console.log(usersRenameProperty)
+*/
